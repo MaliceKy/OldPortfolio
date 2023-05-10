@@ -1,0 +1,20 @@
+/* Other styles for your home page */
+
+/* Styles for the About section */
+.about h2 {
+    font-family: 'Archivo';
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.about p {
+    font-family: 'Lexend';
+    color: #333;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.about img {
+    max-width: 100%;
+    border-radius: 5px;
+}
