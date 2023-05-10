@@ -1,4 +1,8 @@
 /* Other styles for your home page */
+.about {
+    z-index: 1;
+    background-color: aquamarine;
+}
 
 /* Styles for the About section */
 .about h2 {
