@@ -4,6 +4,17 @@
   src: url('../assets/fonts/Lexend-VariableFont_wght.ttf') format('opentype');
 }
 
+@font-face {
+  font-family: 'Archivo';
+  src: url('../assets/fonts/ArchivoBlack-Regular.ttf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('../assets/fonts/Rubik-Black.ttf') format('opentype');
+}
+
+
 body {
     background-color:rgb(60, 68, 212);
 }
@@ -25,18 +36,27 @@ body {
   z-index: -1;
 }
 
-.content {
-  position: relative;
-  right: 20%;
-  z-index: 1;
-  display: flex;
-  align-items: center; /* Vertically align the text-wrapper */
-  justify-content: center; /* Horizontally align the text-wrapper */
-  height: 80vh; /* Set the content height to 100% of the viewport height */
-  color: rgb(255, 255, 255);
+.text-wrapper {
+  /* Add any custom styles for the text wrapper, if needed */
+  margin-top: 30vh;
 }
 
-.text-wrapper {
-  text-align: left; /* Center align the text inside the text-wrapper */
+.custom-heading {
+  font-family: 'Archivo';
+  background-color: #ffffff;
+  background-image: linear-gradient(45deg, #8e5cff, #32eff9);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+  
 }
+
+.custom-paragraph {
+  /* Additional styles for the paragraph, if needed */
+  color: #ffffff; /* Example: change the text color */
+  font-family: 'Archivo';
+}
+
 
