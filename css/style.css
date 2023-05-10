@@ -1,4 +1,4 @@
-/* Imports */
+/* Fonts */
 @font-face {
   font-family: 'Lexend';
   src: url('../assets/fonts/Lexend-VariableFont_wght.ttf') format('opentype');
@@ -14,16 +14,17 @@
   src: url('../assets/fonts/Rubik-Black.ttf') format('opentype');
 }
 
-
+/* Body */
 body {
     background-color:rgb(60, 68, 212);
 }
 
-
+/* Main container */
 .main-container {
   position: relative;
 }
 
+/* Background image */
 .background-image {
   position: fixed;
   top: 0;
@@ -36,11 +37,12 @@ body {
   z-index: -1;
 }
 
+/* Text wrapper */
 .text-wrapper {
-  /* Add any custom styles for the text wrapper, if needed */
   margin-top: 30vh;
 }
 
+/* Custom heading */
 .custom-heading {
   font-family: 'Archivo';
   background-color: #ffffff;
@@ -50,13 +52,32 @@ body {
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent; 
   -moz-text-fill-color: transparent;
-  
 }
 
+/* Waving hand image */
+.waving-hand {
+  height: 5vh;
+  width: auto;
+  vertical-align: middle;
+}
+
+/* Custom paragraph */
 .custom-paragraph {
-  /* Additional styles for the paragraph, if needed */
-  color: #ffffff; /* Example: change the text color */
+  color: #ffffff; 
   font-family: 'Archivo';
 }
 
+/* LinkedIn logo */
+.LinkedIn-logo{
+  height: 2.5vh;
+  width: auto;
+  vertical-align: left;
+}
+
+/* GitHub logo */
+.Git-Hub-logo{
+  height: 2.5vh;
+  width: auto;
+  vertical-align: left;
+}
 
