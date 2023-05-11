@@ -1,24 +1,66 @@
-/* Other styles for your home page */
-.about {
-    z-index: 1;
-    background-color: aquamarine;
-}
-
-/* Styles for the About section */
-.about h2 {
-    font-family: 'Archivo';
-    color: #333;
-    margin-bottom: 1.5rem;
-}
-
-.about p {
+@font-face {
     font-family: 'Lexend';
-    color: #333;
-    font-size: 1.1rem;
-    line-height: 1.6;
+    src: url('../assets/fonts/Lexend-VariableFont_wght.ttf') format('opentype');
 }
 
-.about img {
+@font-face {
+    font-family: 'Archivo';
+    src: url('../assets/fonts/ArchivoBlack-Regular.ttf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('../assets/fonts/Rubik-Black.ttf') format('opentype');
+}
+
+/* Reset browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Spacer styles - controls the space before the About section */
+.spacer {
+    height: 50vh;
+}
+
+/* About Section Styles */
+
+/* Background and layering styles for the entire About section */
+.about {
+    min-height: 100vh;  /* Adjust this value */
+    z-index: 2;
+    background: #1b1f2c;
+    border-radius: 35px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+.about-title {
+    font-family: 'Archivo';
+    background-color: #ffffff;
+    background-image: linear-gradient(45deg, #8e5cff, #32eff9);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    color: transparent;
+    text-align: center;
+}
+
+.profilepic{
     max-width: 100%;
-    border-radius: 5px;
+    height: auto;
+}
+
+.about-desc-text {
+    font-family: "Lexend";
+    background: none;
+    -webkit-background-clip: initial;
+    background-clip: initial;
+    -webkit-text-fill-color: initial; 
+    color: #ffffff;
 }

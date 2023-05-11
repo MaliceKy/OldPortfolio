@@ -4,6 +4,14 @@
   src: url('../assets/fonts/Lexend-VariableFont_wght.ttf') format('opentype');
 }
 
+/* Reset browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
 /* Navigation bar at top */
 .custom-navbar {
   background-color: rgb(29, 30, 41);
@@ -16,8 +24,6 @@
   position: fixed;
   z-index: 1000;
 }
-
-
 
 /* My name */
 .navbar-brand {
