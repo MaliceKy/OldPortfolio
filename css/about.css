@@ -35,11 +35,9 @@
     background: #1b1f2c;
     border-radius: 35px;
     position: relative;
-    border: 1px solid red;
 }
 
 .container{
-    border: 1px solid rgb(255, 0, 174);
 }
 
 .about-title {
@@ -52,14 +50,13 @@
     -webkit-text-fill-color: transparent; 
     color: transparent;
     text-align: center;
-    border: 1px solid blue;
     font-size: 2rem;
+    margin-top: 3%;
 }
 
 .profilepic{
     max-width: 100%;
     height: auto;
-    border: 1px solid yellow;
 }
 
 .about-desc-text {
@@ -69,5 +66,40 @@
     background-clip: initial;
     -webkit-text-fill-color: initial; 
     color: #ffffff;
-    border: 1px solid green;
 }
+
+.tech-stack-container{
+}
+
+.stack-icon{
+    height: 35px;
+    margin-bottom: 3%;
+}
+
+.stack-text{
+    font-family: 'Lexend';
+    background-color: #ffffff;
+    background-image: linear-gradient(45deg, #8e5cff, #32eff9);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    color: transparent;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.stack-images{
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-right: 1rem;
+    vertical-align: middle;
+    padding-left: 1%;
+    margin-bottom: 1%;
+}
+
+.tech-icon {
+    height: 30px;  /* adjust as needed */
+    padding-left: 10%;
+}
+
