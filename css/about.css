@@ -39,6 +39,11 @@
 }
 
 .container{
+    background: #181822;
+    border-radius: 35px;
+    height: auto;
+    width: 90%;
+    margin-top: 3vh;
 }
 
 .about-title {
@@ -75,6 +80,13 @@
 .stack-icon{
     height: 35px;
     margin-bottom: 3%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.stack-text {
+    margin-top: 5%;
+    white-space: nowrap;
 }
 
 .stack-text{
@@ -91,6 +103,8 @@
 }
 
 .stack-images{
+    display: flex;
+    flex-wrap: wrap;
     width: 2.5rem;
     height: 2.5rem;
     margin-right: 1rem;
@@ -100,8 +114,11 @@
 }
 
 .tech-icon {
-    height: 30px;  /* adjust as needed */
-    padding-left: 10%;
+    width: 4vh;
+    height: auto;
+    object-fit: scale-down;
+    padding-left: 2%;
+    margin-bottom: 2%;
 }
 
 .resume-container {
@@ -129,6 +146,7 @@
     border-radius: 6px;
     border: none;
     font-family: 'Lexend';
+    margin-bottom: 5%;
 }
 
 .custom-button:hover {
