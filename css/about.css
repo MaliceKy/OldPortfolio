@@ -101,17 +101,17 @@
 }
 
 .stack-images{
-    width: 2.5rem;
-    height: 2.5rem;
-    margin-right: 1rem;
+    display: flex;
+    flex-wrap: wrap;
     vertical-align: middle;
-    padding-left: 1%;
-    margin-bottom: 1%;
 }
 
 .tech-icon {
-    height: 30px;  /* adjust as needed */
-    padding-left: 10%;
+    width: 4vh;
+    height: auto;
+    object-fit: scale-down;
+    padding-left: 4%;
+    margin-bottom: 4%;
 }
 
 .resume-container {
@@ -139,6 +139,7 @@
     border-radius: 6px;
     border: none;
     font-family: 'Lexend';
+    margin-bottom: 5%;
 }
 
 .custom-button:hover {
