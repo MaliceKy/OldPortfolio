@@ -47,7 +47,7 @@
     background-color: #10101a;
     border-radius: 35px;
     z-index: -1; 
-    margin-top: 5%;
+    margin-top: 6.5%;
 }
 
 
@@ -97,22 +97,25 @@
     -webkit-text-fill-color: transparent; 
     color: transparent;
     text-align: center;
-    font-size: 1rem;
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    white-space: nowrap;
 }
+
 
 .stack-images{
     display: flex;
     flex-wrap: wrap;
-    vertical-align: middle;
 }
 
 .tech-icon {
-    width: 4vh;
+    max-width: 10%;
     height: auto;
-    object-fit: scale-down;
-    padding-left: 4%;
-    margin-bottom: 4%;
+    padding-left: 1%;
+    margin-bottom: 5%;
 }
+
+
+
 
 .resume-container {
 
@@ -140,6 +143,7 @@
     border: none;
     font-family: 'Lexend';
     margin-bottom: 5%;
+    margin-left: 2%;
 }
 
 .custom-button:hover {
