@@ -106,3 +106,22 @@ body {
 .linkedin-logo:hover, .git-hub-logo:hover {
   fill: #979797;
 }
+
+/* This will change the scrollbar for the whole page */
+body::-webkit-scrollbar {
+  width: 10px; /* Width of the scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: #1b1f2c; /* Color of the track */
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #333547; /* Color of the scroll thumb */
+  border-radius: 25px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: #282942; /* Color of the scroll thumb on hover */
+}
+

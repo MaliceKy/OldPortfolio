@@ -48,6 +48,10 @@
     border-radius: 35px;
     z-index: -1; 
     margin-top: 6.5%;
+    margin-left: auto;
+    margin-right: auto;
+    
+    margin-bottom: 10px;
 }
 
 
@@ -105,20 +109,24 @@
 .stack-images{
     display: flex;
     flex-wrap: wrap;
+    height: 40px;
+    width: 240px;
+    
 }
 
 .tech-icon {
-    max-width: 10%;
+    max-width: 100px;
+    max-height: 90%;
     height: auto;
     padding-left: 1%;
-    margin-bottom: 5%;
 }
 
 
 
 
 .resume-container {
-
+    margin-top: 2%;
+    margin-bottom: 5%;
 }
 
 .resume-logo {
@@ -142,8 +150,6 @@
     border-radius: 6px;
     border: none;
     font-family: 'Lexend';
-    margin-bottom: 5%;
-    margin-left: 2%;
 }
 
 .custom-button:hover {
