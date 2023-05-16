@@ -42,18 +42,15 @@
 }
 
 .row{
+    padding-left: 5%;
+    padding-right: 5%;
     display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .project-1-img{
     border-radius: 15px;
 }
 
-.project-2-img{
-    border-radius: 15px;
-}
 .title-p1{
     font-family: 'Archivo';
     background-color: #ffffff;
@@ -65,52 +62,67 @@
     color: transparent;
     font-size: 1.5rem;
     text-align: center; 
+    margin-top: 3%;
 }
 
 
 .desc-1{
     font-family: "Lexend";
-    background: none;
     color: #ffffff;
     word-wrap: break-word;
 }
-.desc-2{
-    padding: 3%;
+
+.project-1-icons{
+    max-height: 2rem;
+    max-width: auto;
+    display: flex;
+    margin-bottom: 5%;
+}
+
+.github-parent, .external-link-parent {
+   padding-right: 2%;
+}
+
+.github-link, .external-link{
+    display: flex;
+    margin-right: 1%;
+}
+
+.git-hub-logo-p1, .external-link-logo-p1{
+    height: 2rem;
+    vertical-align: middle;
+    cursor: pointer;
+    fill: #ffffff;
+    transition: fill 0.3s ease-in-out;
+}
+
+  .github-text, .link-text{
     font-family: "Lexend";
-    background: none;
-    color: #18b096;
-}
+    color: #ffffff;
+    margin-top: 1%;
+    transition: color 0.3s ease;
+  }
 
-.git-hub-logo-p1 {
-    width: 2rem;
-    height: 2rem;
-    cursor: pointer;
-    fill: #ffffff;
-    transition: fill 0.3s ease-in-out;
-    transform: translateY(0px);
-    margin-top: 1.4%;
+    .github-link,
+    .github-link:hover,
+    .github-link:visited,
+    .github-link:active,
+    .external-link,
+    .external-link:hover,
+    .external-link:visited,
+    .external-link:active{
+        text-decoration: none;
+    }
+
+    .github-link:hover .git-hub-logo-p1,
+    .github-link:hover .github-text {
+        fill: #979797;
+        color: #979797;
+    }
     
-  }
-
-  .external-link-logo-p1{
-    width: 1.6rem;
-    height: auto;
-    cursor: pointer;
-    fill: #ffffff;
-    transition: fill 0.3s ease-in-out;
-    margin-top: .1%;
- 
+    .external-link:hover .external-link-logo-p1,
+    .external-link:hover .link-text {
+        fill: #979797;
+        color: #979797;
+    }
     
-  }
-
-  .info-link-logo-p1{
-    width: 2rem;
-    height: 2rem;
-    cursor: pointer;
-    fill: #ffffff;
-    transition: fill 0.3s ease-in-out;
-  }
-
-  .git-hub-logo-p1:hover, .external-link-logo-p1:hover, .info-link-logo-p1:hover {
-    fill: #979797;
-}
