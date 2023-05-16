@@ -83,82 +83,54 @@
     color: #ffffff;
 }
 
-.tech-stack-container{
-}
-
-.stack-icon{
-    height: 35px;
-    margin-bottom: 3%;
-}
-
-.stack-text{
-    font-family: 'Lexend';
-    background-color: #ffffff;
-    background-image: linear-gradient(45deg, #8e5cff, #32eff9);
-    background-size: 100%;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent; 
-    color: transparent;
-    text-align: center;
-    font-size: clamp(1rem, 2vw, 1.5rem);
-    white-space: nowrap;
-}
-
-
-.stack-images{
+.language-container{
     display: flex;
-    flex-wrap: wrap;
-    height: 40px;
-    width: 240px;
-    
-}
-
-.tech-icon {
-    max-width: 100px;
-    max-height: 90%;
-    height: auto;
-    padding-left: 1%;
-}
-
-
-
-
-.resume-container {
-    margin-top: 2%;
     margin-bottom: 5%;
 }
 
-.resume-logo {
-    width: 1.5rem;
+.javascript-logo, .css-logo, .cpp-logo,
+.html-logo, .react-logo, .java-logo{
     height: 2rem;
-    margin-right: 1rem;
-    fill: white;
+    vertical-align: middle;
+    fill: #ffffff;
+    transition: fill 0.3s ease-in-out;
+    margin-left: 2%;
 }
 
-.custom-button {
+.resume-container{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: linear-gradient(45deg, #8e5cff, #32eff9);
-    color: white;
-    padding: 6px 16px;
-    text-align: center;
-    font-size: .93rem;
-    transition-duration: 0.4s;
+    margin-bottom: 5%;
+}
+
+.resume-link{
+    display: flex;
+    margin-left: 2%;
+}
+
+.resume-link{
+    height: 2rem;
+    vertical-align: middle;
     cursor: pointer;
-    border-radius: 6px;
-    border: none;
-    font-family: 'Lexend';
+    fill: #ffffff;
+    transition: fill 0.3s ease-in-out;
 }
 
-.custom-button:hover {
-    background-image: linear-gradient(45deg, #5c82ff, #32f9ec);
-    color: #1b1f2c;
-    transition-duration: .7s;
+.resume-text{
+    font-family: "Lexend";
+    color: #ffffff;
+    margin-top: 2%;
+    transition: color 0.3s ease;
 }
 
-.custom-button:hover .resume-logo {
-    fill: #1b1f2c;
-    transition-duration: .4s;
+.resume-link,
+.resume-link:hover,
+.resume-link:visited,
+.resume-link:active{
+    text-decoration: none;
+}
+
+.resume-link:hover .resume-logo,
+.resume-link:hover .resume-text {
+    fill: #979797;
+    color: #979797;
 }
