@@ -15,10 +15,6 @@ footer {
     flex-wrap: wrap;
 }
 
-.email-content{
-    padding-left: 5%;
-}
-
 .mail-link{
     display: flex;
     margin-right: 1%;
@@ -52,9 +48,7 @@ footer {
 }
 
 .Github-LinkedIn-content{
-    padding-left: 5%;
     display: flex;
-    padding-right: 5%;
 }
 
 .git-link, .li-link{
