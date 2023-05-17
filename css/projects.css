@@ -8,11 +8,6 @@
     src: url('../assets/fonts/ArchivoBlack-Regular.ttf') format('opentype');
 }
 
-@font-face {
-    font-family: 'Rubik';
-    src: url('../assets/fonts/Rubik-Black.ttf') format('opentype');
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -20,7 +15,7 @@
 }
 
 .projects {
-    min-height: 60vh;
+    min-height: auto;
     overflow: auto;
     z-index: 2;
     background: #1b1f2c;

@@ -1,0 +1,101 @@
+footer {
+    background-color: #1b1f2c;
+    color: white;
+    height: 80px;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    background-color: #10101a;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    align-items: center;
+    height: 110%;
+    flex-wrap: wrap;
+}
+
+.email-content{
+    padding-left: 5%;
+}
+
+.mail-link{
+    display: flex;
+    margin-right: 1%;
+}
+
+.mail-logo{
+    height: 2rem;
+    vertical-align: middle;
+    cursor: pointer;
+    fill: #ffffff;
+    transition: fill 0.3s ease-in-out;
+}
+
+  .mail-text{
+    font-family: "Lexend";
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+.mail-link,
+.mail-link:hover,
+.mail-link:visited,
+.mail-link:active{
+    text-decoration: none;
+}
+
+.mail-link:hover .mail-logo,
+.mail-link:hover .mail-text {
+    fill: #979797;
+    color: #979797;
+}
+
+.Github-LinkedIn-content{
+    padding-left: 5%;
+    display: flex;
+    padding-right: 5%;
+}
+
+.git-link, .li-link{
+    display: flex;
+    margin-right: 10%;
+}
+
+.github-logo, .li-logo{
+    height: 2rem;
+    vertical-align: middle;
+    cursor: pointer;
+    fill: #ffffff;
+    transition: fill 0.3s ease-in-out;
+}
+
+.li-link{
+    margin-right: 5%;
+}
+
+  .git-text, .li-text{
+    font-family: "Lexend";
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+.git-link,
+.git-link:hover,
+.git-link:visited,
+.git-link:active,
+.li-link,
+.li-link:hover,
+.li-link:visited,
+.li-link:active{
+    text-decoration: none;
+}
+
+.git-link:hover .github-logo,
+.git-link:hover .git-text,
+.li-link:hover .li-logo,
+.li-link:hover .li-text {
+    fill: #979797;
+    color: #979797;
+}
+  
