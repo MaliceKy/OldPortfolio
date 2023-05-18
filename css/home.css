@@ -47,6 +47,11 @@ body {
   z-index: -2;
 }
 
+/* Spacer styles - controls the space before the About section */
+.spacer {
+  height: 50vh;
+}
+
 /* Text wrapper */
 .text-wrapper {
   margin-top: 30vh;

@@ -17,11 +17,6 @@
     box-sizing: border-box;
 }
 
-/* Spacer styles - controls the space before the About section */
-.spacer {
-    height: 50vh;
-}
-
 /* About Section Styles */
 
 /* Background and layering styles for the entire About section */
