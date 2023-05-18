@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="home">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"> 
+  <meta name="theme-color" content="#10101a" />
+
   <title>Kyle Malice | Front-end Developer</title>
   
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-
   <!-- CSS -->
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/home.css">
@@ -16,13 +17,13 @@
   <link rel="stylesheet" href="css/contact.css">
   <link rel="stylesheet" href="css/footer.css">
 
-  <!-- Header -->
+    <!-- Header -->
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
             <div class="container-fluid">
-                <a href="#" class="navbar-brand">Kyle Malice</a>
+                <a href="#home" class="navbar-brand">Kyle Malice</a>
                 <button
                     class="navbar-toggler"
                     type="button"
@@ -40,10 +41,10 @@
                 </button>
                 <div class="collapse navbar-collapse" id="toggleMobileMenu">
                     <ul class="navbar-nav ms-auto text-center">
-                        <li><a class="nav-link" href="#">Home</a></li>
-                        <li><a class="nav-link" href="#">About</a></li>
-                        <li><a class="nav-link" href="#">Projects</a></li>
-                        <li><a class="nav-link" href="#">Contact</a></li>
+                        <li><a class="nav-link" href="#home">Home</a></li>
+                        <li><a class="nav-link" href="#about">About</a></li>
+                        <li><a class="nav-link" href="#projects">Projects</a></li>
+                        <li><a class="nav-link" href="#contact">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -60,17 +61,21 @@
                     <h1 class="display-3 mb-3 mb-md-4 custom-heading">Kyle Malice</h1>
                     <p 
                     class="fs-4 mb-3 mb-md-4 custom-paragraph">I'm a Front-End Developer.
-                    <img src="assets/images/design/wavinghand.png" alt="Waving Hand" class="waving-hand">
+                    <img src="assets/images/design/wavinghand.webp" alt="Waving Hand" class="waving-hand">
                     </p>
 
                     <div class="logo-container">
-                        <svg class="linkedin-logo" viewBox="0 0 24 24">
-                            <path d="M20,2H4C2.9,2,2,2.9,2,4v16c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2V4C22,2.9,21.1,2,20,2z M8.1,18H5V9.4h3.1V18z M6.5,8.4 L6.5,8.4C5.6,8.4,5,7.8,5,7s0.6-1.4,1.6-1.4c0.9,0,1.5,0.6,1.5,1.4S7.5,8.4,6.5,8.4z M19,18h-3.1v-4.7c0-1.3-0.8-1.6-1.1-1.6 s-1.3,0.2-1.3,1.6c0,0.2,0,4.7,0,4.7h-3.1V9.4h3.1v1.2c0.4-0.7,1.2-1.2,2.7-1.2s2.7,1.2,2.7,3.9L19,18L19,18z"/>
-                        </svg>
+                        <a href="https://linkedin.com/in/kyle-malice" target="_blank">
+                            <svg class="linkedin-logo" viewBox="0 0 24 24">
+                                <path d="M20,2H4C2.9,2,2,2.9,2,4v16c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2V4C22,2.9,21.1,2,20,2z M8.1,18H5V9.4h3.1V18z M6.5,8.4 L6.5,8.4C5.6,8.4,5,7.8,5,7s0.6-1.4,1.6-1.4c0.9,0,1.5,0.6,1.5,1.4S7.5,8.4,6.5,8.4z M19,18h-3.1v-4.7c0-1.3-0.8-1.6-1.1-1.6 s-1.3,0.2-1.3,1.6c0,0.2,0,4.7,0,4.7h-3.1V9.4h3.1v1.2c0.4-0.7,1.2-1.2,2.7-1.2s2.7,1.2,2.7,3.9L19,18L19,18z"/>
+                            </svg>
+                        </a>
 
-                        <svg class="git-hub-logo" viewBox="0 0 24 24">
-                            <path d='M18.88 1.099C18.147.366 17.265 0 16.233 0H3.746C2.714 0 1.832.366 1.099 1.099.366 1.832 0 2.714 0 3.746v12.487c0 1.032.366 1.914 1.099 2.647.733.733 1.615 1.099 2.647 1.099H6.66c.19 0 .333-.007.429-.02a.504.504 0 0 0 .286-.169c.095-.1.143-.245.143-.435l-.007-.885c-.004-.564-.006-1.01-.006-1.34l-.3.052c-.19.035-.43.05-.721.046a5.555 5.555 0 0 1-.904-.091 2.026 2.026 0 0 1-.872-.39 1.651 1.651 0 0 1-.572-.8l-.13-.3a3.25 3.25 0 0 0-.41-.663c-.186-.243-.375-.407-.566-.494l-.09-.065a.956.956 0 0 1-.17-.156.723.723 0 0 1-.117-.182c-.026-.061-.004-.111.065-.15.07-.04.195-.059.378-.059l.26.04c.173.034.388.138.643.311a2.1 2.1 0 0 1 .631.677c.2.355.44.626.722.813.282.186.566.28.852.28.286 0 .533-.022.742-.065a2.59 2.59 0 0 0 .585-.196c.078-.58.29-1.028.637-1.34a8.907 8.907 0 0 1-1.333-.234 5.314 5.314 0 0 1-1.223-.507 3.5 3.5 0 0 1-1.047-.872c-.277-.347-.505-.802-.683-1.365-.177-.564-.266-1.215-.266-1.952 0-1.049.342-1.942 1.027-2.68-.32-.788-.29-1.673.091-2.652.252-.079.625-.02 1.119.175.494.195.856.362 1.086.5.23.14.414.257.553.352a9.233 9.233 0 0 1 2.497-.338c.859 0 1.691.113 2.498.338l.494-.312a6.997 6.997 0 0 1 1.197-.572c.46-.174.81-.221 1.054-.143.39.98.424 1.864.103 2.653.685.737 1.028 1.63 1.028 2.68 0 .737-.089 1.39-.267 1.957-.177.568-.407 1.023-.689 1.366-.282.343-.633.63-1.053.865-.42.234-.828.403-1.223.507a8.9 8.9 0 0 1-1.333.235c.45.39.676 1.005.676 1.846v3.11c0 .147.021.266.065.357a.36.36 0 0 0 .208.189c.096.034.18.056.254.064.074.01.18.013.318.013h2.914c1.032 0 1.914-.366 2.647-1.099.732-.732 1.099-1.615 1.099-2.647V3.746c0-1.032-.367-1.914-1.1-2.647z'/>
-                        </svg>
+                        <a href="https://github.com/MaliceKy" target="_blank">
+                            <svg class="git-hub-logo" viewBox="0 0 24 24">
+                                <path d='M18.88 1.099C18.147.366 17.265 0 16.233 0H3.746C2.714 0 1.832.366 1.099 1.099.366 1.832 0 2.714 0 3.746v12.487c0 1.032.366 1.914 1.099 2.647.733.733 1.615 1.099 2.647 1.099H6.66c.19 0 .333-.007.429-.02a.504.504 0 0 0 .286-.169c.095-.1.143-.245.143-.435l-.007-.885c-.004-.564-.006-1.01-.006-1.34l-.3.052c-.19.035-.43.05-.721.046a5.555 5.555 0 0 1-.904-.091 2.026 2.026 0 0 1-.872-.39 1.651 1.651 0 0 1-.572-.8l-.13-.3a3.25 3.25 0 0 0-.41-.663c-.186-.243-.375-.407-.566-.494l-.09-.065a.956.956 0 0 1-.17-.156.723.723 0 0 1-.117-.182c-.026-.061-.004-.111.065-.15.07-.04.195-.059.378-.059l.26.04c.173.034.388.138.643.311a2.1 2.1 0 0 1 .631.677c.2.355.44.626.722.813.282.186.566.28.852.28.286 0 .533-.022.742-.065a2.59 2.59 0 0 0 .585-.196c.078-.58.29-1.028.637-1.34a8.907 8.907 0 0 1-1.333-.234 5.314 5.314 0 0 1-1.223-.507 3.5 3.5 0 0 1-1.047-.872c-.277-.347-.505-.802-.683-1.365-.177-.564-.266-1.215-.266-1.952 0-1.049.342-1.942 1.027-2.68-.32-.788-.29-1.673.091-2.652.252-.079.625-.02 1.119.175.494.195.856.362 1.086.5.23.14.414.257.553.352a9.233 9.233 0 0 1 2.497-.338c.859 0 1.691.113 2.498.338l.494-.312a6.997 6.997 0 0 1 1.197-.572c.46-.174.81-.221 1.054-.143.39.98.424 1.864.103 2.653.685.737 1.028 1.63 1.028 2.68 0 .737-.089 1.39-.267 1.957-.177.568-.407 1.023-.689 1.366-.282.343-.633.63-1.053.865-.42.234-.828.403-1.223.507a8.9 8.9 0 0 1-1.333.235c.45.39.676 1.005.676 1.846v3.11c0 .147.021.266.065.357a.36.36 0 0 0 .208.189c.096.034.18.056.254.064.074.01.18.013.318.013h2.914c1.032 0 1.914-.366 2.647-1.099.732-.732 1.099-1.615 1.099-2.647V3.746c0-1.032-.367-1.914-1.1-2.647z'/>
+                            </svg>
+                        </a>
                     </div>
 
                 </div>
@@ -82,7 +87,7 @@
     <div class="spacer"></div>
 
     <!-- About Section -->
-    <div class="about d-flex align-items-center" style="min-height:60vh;">
+    <div id="about" class="about d-flex align-items-center">
         <!-- Container -->
         <div class="container">
             <!-- Title -->
@@ -93,7 +98,7 @@
             <div class="row">
                 <!-- Column for image -->
                 <div class="col-lg-6 col-md-12">
-                    <img src="assets/images/design/KylePFP.png" alt="me" class="profilepic img-fluid">
+                    <img src="assets/images/design/KylePFP.webp" alt="me" class="profilepic img-fluid">
                 </div>
                 <!-- Column for text -->
                 <div class="col-lg-6 col-md-12">
@@ -126,21 +131,22 @@
                             <path d="M22.394 6c-.167-.29-.398-.543-.652-.69L12.926.22c-.509-.294-1.34-.294-1.848 0L2.26 5.31c-.508.293-.923 1.013-.923 1.6v10.18c0 .294.104.62.271.91.167.29.398.543.652.69l8.816 5.09c.508.293 1.34.293 1.848 0l8.816-5.09c.254-.147.485-.4.652-.69.167-.29.27-.616.27-.91V6.91c.003-.294-.1-.62-.268-.91zM12 19.11c-3.92 0-7.109-3.19-7.109-7.11 0-3.92 3.19-7.11 7.11-7.11a7.133 7.133 0 016.156 3.553l-3.076 1.78a3.567 3.567 0 00-3.08-1.78A3.56 3.56 0 008.444 12 3.56 3.56 0 0012 15.555a3.57 3.57 0 003.08-1.778l3.078 1.78A7.135 7.135 0 0112 19.11zm7.11-6.715h-.79v.79h-.79v-.79h-.79v-.79h.79v-.79h.79v.79h.79zm2.962 0h-.79v.79h-.79v-.79h-.79v-.79h.79v-.79h.79v.79h.79z"/>
                         </svg>
                     </div>
-                    <div class="resume-container">
-                        <a href="https://github.com/yourusername/yourproject" target="_blank" class="resume-link">
-                            <svg class="resume-logo" viewBox="0 0 512 512">
+                    <div class="resume-parent mb-4">
+                        <a href="assets/pdf/Kyle-Malice-Resume.pdf" target="_blank" class="resume-link">
+                            <svg class="resume-logo" viewBox="0 10 512 512">
                                 <path d="M368,32H144A64.07,64.07,0,0,0,80,96V416a64.07,64.07,0,0,0,64,64H368a64.07,64.07,0,0,0,64-64V96A64.07,64.07,0,0,0,368,32ZM256,304H176a16,16,0,0,1,0-32h80a16,16,0,0,1,0,32Zm80-80H176a16,16,0,0,1,0-32H336a16,16,0,0,1,0,32Zm0-80H176a16,16,0,0,1,0-32H336a16,16,0,0,1,0,32Z">
                             </svg>
-                            <p class="resume-text">View Resume</p>
+                            <p class="resume-text">Resume</p>
                         </a>
                     </div>
+                    
                 </div>
             </div>
         </div>
     </div>
 
     <!-- Projects Section -->
-    <div class="projects align-items-center">
+    <div id="projects" class="projects align-items-center">
         <div class="container mt-xs-5 mt-sm-5 mt-xl-5">
             <!-- Title -->
             <div class="project-title">
@@ -151,7 +157,7 @@
             <div class="row">
                 <!-- Column for image -->
                 <div class="col-lg-4 col-md-5 mb-md-5 desc-container">
-                    <img src="assets/images/projects/NYC.jpg" alt="me" class="project-1-img img-fluid mt-sm-4">
+                    <img src="assets/images/projects/NYC.webp" alt="me" class="project-1-img img-fluid mt-sm-4">
 
                 </div>
                 <!-- Column for text -->
@@ -188,7 +194,7 @@
     </div>
 
     <!-- Contact Section -->
-    <div class="contact">
+    <div id="contact" class="contact">
         <div class="container mt-xs-5 mt-sm-5 mt-xl-5">
             <!-- Title -->
             <div class="contact-title">
@@ -218,7 +224,7 @@
     <footer>
         <div class="footer-container d-flex flex-column flex-sm-row justify-content-sm-between align-items-center">
             <div class="email-content mt-2 text-center px-sm-4">
-                <a href="https://github.com/yourusername/yourproject" target="_blank" class="mail-link">
+                <a href="mailto:Malice.Kyle@gmail.com" class="mail-link">
                     <svg class="mail-logo" viewBox="0 3 24 24">
                         <path d="M3 8L10.8906 13.2604C11.5624 13.7083 12.4376 13.7083 13.1094 13.2604L21 8M5 19H19C20.1046 19 21 18.1046 21 17V7C21 5.89543 20.1046 5 19 5H5C3.89543 5 3 5.89543 3 7V17C3 18.1046 3.89543 19 5 19Z" stroke="#10101a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     </svg>
@@ -227,14 +233,14 @@
             </div>
 
             <div class="Github-LinkedIn-content mt-sm-3 px-sm-5">
-                <a href="https://github.com/yourusername/yourproject" target="_blank" class="li-link">
+                <a href="https://linkedin.com/in/kyle-malice" target="_blank" class="li-link">
                     <svg class="li-logo" viewBox="0 2 24 24">
                         <path d="M20,2H4C2.9,2,2,2.9,2,4v16c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2V4C22,2.9,21.1,2,20,2z M8.1,18H5V9.4h3.1V18z M6.5,8.4 L6.5,8.4C5.6,8.4,5,7.8,5,7s0.6-1.4,1.6-1.4c0.9,0,1.5,0.6,1.5,1.4S7.5,8.4,6.5,8.4z M19,18h-3.1v-4.7c0-1.3-0.8-1.6-1.1-1.6 s-1.3,0.2-1.3,1.6c0,0.2,0,4.7,0,4.7h-3.1V9.4h3.1v1.2c0.4-0.7,1.2-1.2,2.7-1.2s2.7,1.2,2.7,3.9L19,18L19,18z"/>
                     </svg>
                     <p class="li-text">LinkedIn</p>
                 </a>
 
-                <a href="https://github.com/yourusername/yourproject" target="_blank" class="git-link">
+                <a href="https://github.com/MaliceKy" target="_blank" class="git-link">
                     <svg class="github-logo" viewBox="0 0 24 24">
                         <path d='M18.88 1.099C18.147.366 17.265 0 16.233 0H3.746C2.714 0 1.832.366 1.099 1.099.366 1.832 0 2.714 0 3.746v12.487c0 1.032.366 1.914 1.099 2.647.733.733 1.615 1.099 2.647 1.099H6.66c.19 0 .333-.007.429-.02a.504.504 0 0 0 .286-.169c.095-.1.143-.245.143-.435l-.007-.885c-.004-.564-.006-1.01-.006-1.34l-.3.052c-.19.035-.43.05-.721.046a5.555 5.555 0 0 1-.904-.091 2.026 2.026 0 0 1-.872-.39 1.651 1.651 0 0 1-.572-.8l-.13-.3a3.25 3.25 0 0 0-.41-.663c-.186-.243-.375-.407-.566-.494l-.09-.065a.956.956 0 0 1-.17-.156.723.723 0 0 1-.117-.182c-.026-.061-.004-.111.065-.15.07-.04.195-.059.378-.059l.26.04c.173.034.388.138.643.311a2.1 2.1 0 0 1 .631.677c.2.355.44.626.722.813.282.186.566.28.852.28.286 0 .533-.022.742-.065a2.59 2.59 0 0 0 .585-.196c.078-.58.29-1.028.637-1.34a8.907 8.907 0 0 1-1.333-.234 5.314 5.314 0 0 1-1.223-.507 3.5 3.5 0 0 1-1.047-.872c-.277-.347-.505-.802-.683-1.365-.177-.564-.266-1.215-.266-1.952 0-1.049.342-1.942 1.027-2.68-.32-.788-.29-1.673.091-2.652.252-.079.625-.02 1.119.175.494.195.856.362 1.086.5.23.14.414.257.553.352a9.233 9.233 0 0 1 2.497-.338c.859 0 1.691.113 2.498.338l.494-.312a6.997 6.997 0 0 1 1.197-.572c.46-.174.81-.221 1.054-.143.39.98.424 1.864.103 2.653.685.737 1.028 1.63 1.028 2.68 0 .737-.089 1.39-.267 1.957-.177.568-.407 1.023-.689 1.366-.282.343-.633.63-1.053.865-.42.234-.828.403-1.223.507a8.9 8.9 0 0 1-1.333.235c.45.39.676 1.005.676 1.846v3.11c0 .147.021.266.065.357a.36.36 0 0 0 .208.189c.096.034.18.056.254.064.074.01.18.013.318.013h2.914c1.032 0 1.914-.366 2.647-1.099.732-.732 1.099-1.615 1.099-2.647V3.746c0-1.032-.367-1.914-1.1-2.647z'/>
                     </svg>

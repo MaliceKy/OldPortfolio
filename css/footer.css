@@ -32,6 +32,7 @@ footer {
     font-family: "Lexend";
     color: #ffffff;
     transition: color 0.3s ease;
+    font-display: swap;
 }
 
 .mail-link,
@@ -72,6 +73,7 @@ footer {
     font-family: "Lexend";
     color: #ffffff;
     transition: color 0.3s ease;
+    font-display: swap;
 }
 
 .git-link,

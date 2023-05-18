@@ -2,16 +2,19 @@
 @font-face {
   font-family: 'Lexend';
   src: url('../assets/fonts/Lexend-VariableFont_wght.ttf') format('opentype');
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Archivo';
   src: url('../assets/fonts/ArchivoBlack-Regular.ttf') format('opentype');
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Rubik';
   src: url('../assets/fonts/Rubik-Black.ttf') format('opentype');
+  font-display: swap;
 }
 
 /* Reset browser styles */
@@ -22,7 +25,8 @@
 }
 
 /* Body */
-body {    
+body {
+  padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
 }
 
 /* Main container */
@@ -37,9 +41,9 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('../assets/images/design/background.jpg');
+  background-image: url('../assets/images/design/background.webp');
   background-size: cover;
-  background-position: center;
+  background-attachment: fixed;
   z-index: -2;
 }
 

@@ -1,11 +1,13 @@
 @font-face {
     font-family: 'Lexend';
     src: url('../assets/fonts/Lexend-VariableFont_wght.ttf') format('opentype');
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'Archivo';
     src: url('../assets/fonts/ArchivoBlack-Regular.ttf') format('opentype');
+    font-display: swap;
 }
 
 /* Reset browser styles */
@@ -24,8 +26,6 @@
 
 /* Background and layering styles for the entire About section */
 .about {
-    min-height: auto;
-    overflow: auto;
     z-index: 2;
     background: #1b1f2c;
     border-top-left-radius: 35px;
@@ -43,8 +43,6 @@
     border-radius: 35px;
     z-index: -1; 
     margin-top: 6.5%;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 
@@ -90,17 +88,25 @@
     margin-left: 2%;
 }
 
-.resume-container{
+
+
+.resume-parent{
+    max-height: 2rem;
+    max-width: auto;
     display: flex;
     margin-bottom: 5%;
 }
 
 .resume-link{
-    display: flex;
-    margin-left: 2%;
+   padding-right: 2%;
 }
 
 .resume-link{
+    display: flex;
+    margin-right: 1%;
+}
+
+.resume-logo{
     height: 2rem;
     vertical-align: middle;
     cursor: pointer;
@@ -108,22 +114,22 @@
     transition: fill 0.3s ease-in-out;
 }
 
-.resume-text{
+  .resume-text{
     font-family: "Lexend";
     color: #ffffff;
-    margin-top: 2%;
+    margin-top: 1%;
     transition: color 0.3s ease;
-}
+  }
 
-.resume-link,
-.resume-link:hover,
-.resume-link:visited,
-.resume-link:active{
-    text-decoration: none;
-}
-
-.resume-link:hover .resume-logo,
-.resume-link:hover .resume-text {
-    fill: #979797;
-    color: #979797;
-}
+    .resume-link,
+    .resume-link:hover,
+    .resume-link:visited,
+    .resume-link:active{
+        text-decoration: none;
+    }
+    
+    .resume-link:hover .resume-logo,
+    .resume-link:hover .resume-text {
+        fill: #979797;
+        color: #979797;
+    }
