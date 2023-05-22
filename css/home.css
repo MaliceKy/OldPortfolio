@@ -1,136 +1,134 @@
 /* Fonts */
 @font-face {
-  font-family: 'Lexend';
-  src: url('../assets/fonts/Lexend-VariableFont_wght.ttf') format('opentype');
-  font-display: swap;
-}
+    font-family: 'Lexend';
+    src: url('../assets/fonts/Lexend-VariableFont_wght.ttf') format('opentype');
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Archivo';
+    src: url('../assets/fonts/ArchivoBlack-Regular.ttf') format('opentype');
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Rubik';
+    src: url('../assets/fonts/Rubik-Black.ttf') format('opentype');
+    font-display: swap;
+  }
+  
+  /* Reset browser styles */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body */
+  body {
+    padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+    background-color: #10101a;
+  }
 
-@font-face {
-  font-family: 'Archivo';
-  src: url('../assets/fonts/ArchivoBlack-Regular.ttf') format('opentype');
-  font-display: swap;
-}
+  .home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #10101a;
+    background-image: url("../assets/images/design/background.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
 
-@font-face {
-  font-family: 'Rubik';
-  src: url('../assets/fonts/Rubik-Black.ttf') format('opentype');
-  font-display: swap;
-}
+  .contents{
+  }
 
-/* Reset browser styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+  .title{
+    text-align-last: center;
+  }
 
-/* Body */
-body {
-  padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
-}
+  .welcome-text{
+    color: #ffffff; 
+    font-family: 'Archivo';
+  }
 
-/* Main container */
-.main-container {
-  position: relative;
-}
+  .name-text{
+    font-family: 'Archivo';
+    background-color: #ffffff;
+    background-image: linear-gradient(45deg, #8e5cff, #32eff9);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+  }
 
-/* Background image */
-.background-image {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url('../assets/images/design/background.webp');
-  background-size: cover;
-  background-attachment: fixed;
-  z-index: -2;
-}
+  .ending-text-section {
+    display: flex;
+    align-items: center; /* This will vertically align the elements in case they have different heights */
+    justify-content: center; /* This will center the items horizontally */
+  }
 
-/* Spacer styles - controls the space before the About section */
-.spacer {
-  height: 50vh;
-}
+  .ending-text{
+    color: #ffffff; 
+    font-family: 'Archivo';
+  }
 
-/* Text wrapper */
-.text-wrapper {
-  margin-top: 30vh;
-}
+  .waving-hand{
+    height: 5vh;
+    width: auto;
+    margin-bottom: 5%;
+  }
 
-/* Custom heading */
-.custom-heading {
-  font-family: 'Archivo';
-  background-color: #ffffff;
-  background-image: linear-gradient(45deg, #8e5cff, #32eff9);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent; 
-  -moz-text-fill-color: transparent;
-}
+  .social-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-/* Waving hand image */
-.waving-hand {
-  height: 5vh;
-  width: auto;
-  vertical-align: middle;
-}
-
-/* Custom paragraph */
-.custom-paragraph {
-  color: #ffffff; 
-  font-family: 'Archivo';
-}
-
-.logo-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%; 
-  margin: 0 auto;
-}
-
-.linkedin-logo{
-  width: 2.5rem;
-  height: 2.5rem;
-  margin-right: 1rem;
-  vertical-align: middle;
-  cursor: pointer;
-  fill: #ffffff;
-  transition: fill 0.3s ease-in-out;
-  transform: translateY(-3px);
-}
-
-.git-hub-logo {
-  width: 2.5rem;
-  height: 2.5rem;
-  margin-right: 1rem;
-  vertical-align: middle;
-  cursor: pointer;
-  fill: #ffffff;
-  transition: fill 0.3s ease-in-out;
-  transform: translateY(0px);
-}
-
-.linkedin-logo:hover, .git-hub-logo:hover {
-  fill: #979797;
-}
-
-/* This will change the scrollbar for the whole page */
-body::-webkit-scrollbar {
-  width: 10px; /* Width of the scrollbar */
-}
-
-body::-webkit-scrollbar-track {
-  background: #1b1f2c; /* Color of the track */
-}
-
-body::-webkit-scrollbar-thumb {
-  background: #333547; /* Color of the scroll thumb */
-  border-radius: 25px;
-}
-
-body::-webkit-scrollbar-thumb:hover {
-  background: #282942; /* Color of the scroll thumb on hover */
-}
-
+  .linkedin-logo{
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-right: 1rem;
+    vertical-align: middle;
+    cursor: pointer;
+    fill: #ffffff;
+    transition: fill 0.3s ease-in-out;
+    transform: translateY(-3px);
+  }
+  
+  .git-hub-logo {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-right: 1rem;
+    vertical-align: middle;
+    cursor: pointer;
+    fill: #ffffff;
+    transition: fill 0.3s ease-in-out;
+    transform: translateY(0px);
+  }
+  
+  .linkedin-logo:hover, .git-hub-logo:hover {
+    fill: #979797;
+  }
+  
+  /* This will change the scrollbar for the whole page */
+  body::-webkit-scrollbar {
+    width: 10px; /* Width of the scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #1b1f2c; /* Color of the track */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background: #333547; /* Color of the scroll thumb */
+    border-radius: 25px;
+  }
+  
+  body::-webkit-scrollbar-thumb:hover {
+    background: #282942; /* Color of the scroll thumb on hover */
+  }
