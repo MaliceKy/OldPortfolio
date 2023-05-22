@@ -23,8 +23,11 @@
   transform: translateX(-50%);
   width: 60%;
   position: fixed;
-  z-index: 1000;
+  z-index: 5;
+  transition: top 0.3s ease-in-out;
 }
+
+
 
 /* My name */
 .navbar-brand {
