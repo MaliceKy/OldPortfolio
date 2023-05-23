@@ -199,7 +199,7 @@
             </div>
             <!-- Contact Form -->
             <!-- Row -->
-                <form action="https://formsubmit.co/malice.kyle@gmail.com" method="POST">
+                <form id="myForm" action="https://getform.io/f/afb669d7-d985-4f71-9b62-96dac0c3d4a6" method="POST">
                     <div class="form-group">
                         <label for="email">Your Email:</label>
                         <input type="email" id="email" name="email" required>
@@ -214,6 +214,7 @@
                     </div>
                     <button class="mail-button" type="submit">Send Message</button>
                 </form>
+                <div id="message-status" class="message-status"></div>
         </div>
     </div>
 
@@ -254,5 +255,32 @@
 
   <!-- JS -->
   <script src="js/script.js"></script>
+
+
+    <script>
+        // Get the form and add an event listener for the submit event
+        document.getElementById('myForm').addEventListener('submit', function(event) {
+        // Prevent the form from submitting normally
+        event.preventDefault();
+
+        // Set up the AJAX request
+        var xhr = new XMLHttpRequest();
+        xhr.open('POST', 'https://getform.io/f/afb669d7-d985-4f71-9b62-96dac0c3d4a6', true);
+
+        // Send the form data to Getform
+        xhr.send(new FormData(event.target));
+
+        // Optional: Add some behavior after the form is submitted successfully
+        xhr.onloadend = function () {
+            if (xhr.status == 200) {
+            // You can do something here when the form submission is successful, like showing a message
+            alert("Form submitted successfully!");
+            } else {
+            // Handle the case when form submission failed, e.g., show an error message
+            alert("An error occurred while submitting the form.");
+            }
+        };
+        });
+    </script>
 </body>
 </html>
